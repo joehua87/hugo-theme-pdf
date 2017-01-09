@@ -1,8 +1,4 @@
   <article>
-        {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
-            <img src="{{ .Params.banner | absURL }}" class="article-banner">
-        {{ end }}
-
         <div class="article-entry" itemprop="articleBody">
             {{ .Content }}
         </div>
